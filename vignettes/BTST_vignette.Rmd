@@ -47,14 +47,14 @@ biomarker $i_3$ from site $i_2$ of tooth $i_1$, and extremely small values $\eps
 We use a common independent $\textit{N}(0,\tau^2)$ prior for each $\eta_{i_3j}$ and an 
 independent spike-and-slab lasso based sparsity inducing prior \citep{rovckova2018spike} for tensor $\mathcal{A}\in \mathbb{R}^{28\times 6\times 2\times 6}$ with elements 
 $\alpha_{i_1i_2i_3j}$ as
-\begin{equation}\label{eq:TSSL}
+\begin{equation}
 \begin{aligned}
     &\alpha_{i_1i_2i_3j} \overset{iid}{\sim} (1-\omega_{i_1i_2i_3j})\psi(\alpha_{i_1i_2i_3j}\mid\gamma_0) + \omega_{i_1i_2i_3j}\psi(\alpha_{i_1i_2i_3j}\mid\gamma),\\
        & \omega_{i_1i_2i_3j}\overset{iid}\sim \textit{Bernoulli}(\phi),
 \end{aligned}
 \end{equation}
 where $\gamma_0\ll\gamma_1$ and $\psi(u\mid\gamma) = (\gamma/2)exp(-\gamma|u|)$ is the mean-zero Laplace distribution. 
-When $\gamma \ll \gamma_0$, tensor spike-and-slab lasso prior \eqref{eq:TSSL} closely retrieve to tensor spike-and-slab prior. 
+When $\gamma \ll \gamma_0$, tensor spike-and-slab lasso prior closely retrieve to tensor spike-and-slab prior. 
 The large value of $\phi$ produces highly sparse elements in $\mathcal{A}$. 
 
 ## Tensor Normal prior

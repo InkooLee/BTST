@@ -1,11 +1,14 @@
 Package: BTST
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Bayesian Tensor Skew-t
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: Inkoo Lee
+Maintainer: The package maintainer <inkoo.lee@rice.edu>
+Description: Bayesian Tensor Skew-t
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
