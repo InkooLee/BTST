@@ -27,7 +27,6 @@ library(BTST)
 library(abind)
 
 ## load GAAD data
-setwd('')
 data <- read.csv("PDdata.csv")
 
 ## load required functions
